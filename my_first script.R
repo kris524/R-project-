@@ -9,3 +9,5 @@ roll<-function(bones= 1:6){
 library('ggplot2')
 rolls<-replicate(10000,roll())
 qplot(rolls,binwidth=1)
+
+zoro<-c(4,7,8,4,11,7)
