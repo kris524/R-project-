@@ -43,3 +43,55 @@ myquarter<-function(x){
     
 }
 myquarter(170)
+
+#question 4
+mym <-1:4
+matrixfun<-function(mym){
+  mym[mym%%2==1]<-2*mym[mym%%2==1]
+}
+
+#question 5
+
+myfun<-function(a,b){
+  a^b
+}
+i<- 2
+myfun2<-function(a,b){
+  
+  (a^b)/(2:length(a)+1)
+}
+
+#question 6
+
+a = c(3,5,6)
+b = c(T,T,F)
+c = c("Tom", "Ted", "Hank")
+
+data.frame(a,b,c)
+
+#question 7
+
+invoice<- function(n_units,price){
+  net_price<-n_units*price
+  if (n_units>=25){
+    net_price<-net_price - net_price*0.10
+    }
+  
+  return(net_price)
+}
+
+
+#question 8
+
+doreturn<- function(x,y){
+  
+  a = 5*x + y
+  b = x + 7*y
+  r = 3*x + 9*y
+  t = x/y - 115
+  return (c(a,b,r,t))
+ 
+}
+plot(rivers)
+
+
