@@ -1,3 +1,7 @@
+#These exercises are done from this website:
+#http://r-tutorials.com/r-exercises-beginners-easy-functions/
+
+
 #question 1 
 myfun<-function(l){
   l^(1:length(l))/l # here i expand with division
