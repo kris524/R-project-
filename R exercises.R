@@ -34,8 +34,12 @@ lines(plot_1,col='blue')
 
 #question 3
 
-myquarter<-function(){
+myquarter<-function(x){
   
-  
-  
+  if (x>=0 & x<=90){print(1)}
+  if (x>=90 & x<=180){print(2)}
+  if (x>=180 & x<=270){print(3)}
+  if (x>=270 & x<=360){print(4)}
+    
 }
+myquarter(170)
